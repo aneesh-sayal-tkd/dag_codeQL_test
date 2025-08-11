@@ -18,9 +18,8 @@ schedule = '0 10 * * 1'                                    # Cron expression or 
 dag_tag = 'contract_analytics_cdp_test_airflow'                                      # Tags for organizing DAGs.
 dag_owner = 'Aneesh.sayal@Takeda.com'                                  # Owner of the DAG.
 dag_owner_email = 'Aneesh.sayal@Takeda.com'                          # Email of the DAG owner.
-url_key="abc_123"
-password= "01234"
-sla_time = 60                                      # SLA time for task completion.
+
+sla_time = 60                                     # SLA time for task completion.
 databricks_connection_id = 'MWAA_DBX_CONNECTION'    # Databricks connection ID.
 MWAA_ENV_NAME = Variable.get('MWAA_ENV_NAME')
 MWAA_IAM_ROLE = Variable.get('MWAA_IAM_ROLE')
